@@ -64,7 +64,7 @@ class App:
         self.root.quit()
 
 
-
+#komenatrz
 map = Rm.RandomMap(10, 10)
 map = map.randomMap()
 my_map2 = App(10, map)

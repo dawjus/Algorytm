@@ -2,6 +2,8 @@ import random
 from Graph import *
 from Vertex import *
 
+#rand
+
 class RandomMap():
     def __init__(self, width, height):
         self.width = width

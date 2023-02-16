@@ -20,11 +20,11 @@ class App:
         button = ttk.Button(
             self.root,
             text='Dijkstra',
-            command = self.debil
+            command = self.but
         )
         button.place(x=130, y=10)
 
-    def debil(self):
+    def but(self):
         G = createGraph(self.matrix)
         start = random.randint(0,len(G.vertex))
         end = random.randint(0,len(G.vertex))

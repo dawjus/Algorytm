@@ -1,0 +1,3 @@
+# Algorytm
+
+Dijkstra algorithm

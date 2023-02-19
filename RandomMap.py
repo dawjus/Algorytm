@@ -2,7 +2,6 @@ import random
 from Graph import *
 from Vertex import *
 
-#rand
 
 class RandomMap():
     def __init__(self, width, height):
@@ -12,9 +11,9 @@ class RandomMap():
         self.map = [[-1 for _ in range(self.width)] for _ in range(self.height)]
 
     def randomMap(self):
-        for row in range(self.height):
-            for col in range(self.width):
-                value = random.randint(0, 20)
+        for row in range(self.width):
+            for col in range(self.height):
+                value = random.randint(0, 10)
                 if value == 0:
                     self.map[row][col] = 1 #Vertex
                 elif value in [1, 2, 3]:

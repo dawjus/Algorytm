@@ -33,11 +33,11 @@ def dijkstra(vertices, start):
     return distances
 
 def getShorthestPath(G, end, dist):
+    if dist == float("inf"):
+        return []
     path =[]
-    end = G.vertex[end]
-    for i in range(dist):
-        print(i)
-        print(end.index)
+    end = G.vertex[end].parent
+    for i in range(dist-1):
         path.append(end.index)
         end = end.parent
     return path

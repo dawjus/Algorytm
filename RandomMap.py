@@ -13,10 +13,10 @@ class RandomMap():
     def randomMap(self):
         for row in range(self.width):
             for col in range(self.height):
-                value = random.randint(0, 10)
+                value = random.randint(0, 15)
                 if value == 0:
                     self.map[row][col] = 1 #Vertex
-                elif value in [1, 2, 3]:
+                elif value in [1, 2, 3,4,5,6]:
                     self.map[row][col] = 2 #Tree
                 else:
                     self.map[row][col] = 3 #Empty field
